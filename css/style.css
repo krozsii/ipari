@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+::selection
+{
+    color: black;
+    background-color: crimson;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    font-size: 105%;
+}
+body
+{
+    background: #000;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px;
+    padding-top: 0;
+    z-index: 100000;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+header.sticky
+{
+    padding: 5px 40px;
+    background: #000;
+}
+header .nev, .nev a
+{
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    transition: 0.6s;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+.navigacio
+{
+    position: relative;
+    margin: 0 50px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s ease-in-out;
+}
+
+.navigacio:hover
+{
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: crimson;
+}
+.nev a:hover
+{
+    letter-spacing: 15px;
+    color: crimson;
+}
+.page
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#fooldal
+{
+    position: relative;
+    background: url('../pics/ipari.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+#vegy
+{
+    position: relative;
+    background: url('../pics/vegy.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#korny
+{
+    position: relative;
+    background: url('../pics/korny.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#info
+{
+    position: relative;
+    background: url('../pics/info.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#gepesz
+{
+    position: relative;
+    background: url('../pics/gepesz.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+#mecha
+{
+    position: relative;
+    background: url('../pics/mecha.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+#muany
+{
+    position: relative;
+    background: url('../pics/muany.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+#kisgy
+{
+    position: relative;
+    background: url('../pics/kisgy.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bekezd
+{
+    position: absolute;
+    top: 340px;
+}
+#szov
+{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+h1
+{
+    font-size: 125%;
+    line-height: 125%;
+    color: mediumturquoise;
+    overflow: hidden;
+}
+.leiras
+{
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+    list-style: none;
+    margin-right: 40px;
+    display: block;
+}
+
+.cim
+{
+    display: block;
+    position: absolute;
+    top: 180px;
+    letter-spacing: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(255,255,255,0.7);
+    color: black;
+    font-size: 75px;
+    margin: 20px;
+    outline: 10px inset yellow;
+    z-index: 0;
+}
+
+section
+{
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+header.sticky .nev,
+header.sticky ul li a
+{
+    color: #fff;
+}
+hr
+{
+    background: linear-gradient(to right, red, yellow );
+    height: 10px;
+    border: 0px;
+}
+
+footer
+{
+    width: 100%;
+    padding: 10px 10px;
+    z-index: 1;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+.elerh
+{
+    color: white;
+    display: inline;
+    margin: 20px 50px 0 50px;
+    border: 0;
+    text-decoration: none;
+}
+.eleri
+{
+    color: white;
+    transition: 0.5s;
+    overflow: hidden;
+    margin: 50px 50px 20px 50px;
+}
+.eleri:hover
+{
+    color: crimson;
+    transform: translateY(-15px);
+}
+#next
+{
+    margin: 0;
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    transform: scale(0.7);
+}
+.fa-info
+{
+    padding-right: 40px;
+}
+#nev
+{
+    color: black;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    float: left;
+    transition: 0.3s ease-in-out;
+    margin: 0;
+    padding: 10px;
+}
+#nev:hover
+{
+    color:white;
+}
+#logo
+{
+    position: absolute;
+    right: 15px;
+    transition: 0.5s ease-in;
+}
+
+#logo:hover
+{
+    transform: rotate(1turn);
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+.container .divsection
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+}
